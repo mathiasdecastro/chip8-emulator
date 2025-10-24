@@ -26,7 +26,7 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(catch2)
 
 set(TEST_SOURCES
-    chip8_test.cpp
+    tests/chip8_test.cpp
     src/chip8.cpp
 )
 

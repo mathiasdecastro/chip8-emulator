@@ -14,7 +14,9 @@ FetchContent_MakeAvailable(catch2)
 
 set(TEST_SOURCES
     chip8_test.cpp
+    src/chip8.cpp
 )
 
 add_executable(tests ${TEST_SOURCES})
-target_link_libraries(tests PRIVATE Catch2::Catch2WithMain ../chip8-emulator)
+target_link_libraries(tests PRIVATE Catch2::Catch2WithMain)
+target_include_directories(chip8_tests PRIVATE src)

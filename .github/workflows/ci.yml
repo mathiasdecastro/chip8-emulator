@@ -24,9 +24,7 @@ jobs:
                 cmake --build .
 
             - name: Run Tests
-              run: |
-                cd build
-                ctest --output-on-failure
+              run: ./build/chip8_tests
 
             - name: Run Lint
               run: |

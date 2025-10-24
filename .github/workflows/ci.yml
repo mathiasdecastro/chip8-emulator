@@ -24,7 +24,8 @@ jobs:
                 cmake --build .
 
             - name: Run Tests
-              run: ./build/chip8_tests
+              working-directory: build
+              run: ./chip8_tests
 
             - name: Run Lint
               run: |
